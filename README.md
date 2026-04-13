@@ -71,7 +71,7 @@ const TUSHAR_PANDEY = {
 
 <div align="center">
 
-[![AI Teams Bot](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-RAG-REPO&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12&description_lines_count=3)](https://github.com/tusharpandey436/YOUR-RAG-REPO)
+[![AI Teams Bot](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Agentic_RAG&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12&description_lines_count=3)](https://github.com/tusharpandey436/Agentic_RAG)
 
 </div>
 
@@ -225,15 +225,15 @@ class ProductionRAGPipeline:
 | **Concurrent Users** | 50 | **200+** | 🟢 Exceeds |
 
 <div align="center">
-  <a href="https://github.com/tusharpandey436/YOUR-RAG-REPO">
+  <a href="https://github.com/tusharpandey436/Agentic_RAG">
     <img src="https://img.shields.io/badge/📁_SOURCE_CODE-View_on_GitHub-161b22?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://your-demo-link">
+  <a href="https://https://github.com/tusharpandey436/Agentic_RAG">
     <img src="https://img.shields.io/badge/🎥_DEMO-Watch_Live-ff0000?style=for-the-badge&logo=youtube&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://your-docs-link">
+  <a href="https://https://github.com/tusharpandey436/Agentic_RAG#readme">
     <img src="https://img.shields.io/badge/📚_DOCS-Read_Architecture-00f7ff?style=for-the-badge&logo=readthedocs&logoColor=black" />
   </a>
 </div>
@@ -245,27 +245,35 @@ class ProductionRAGPipeline:
 <div align="center">
 
 <!-- ROW 1 — AI / RAG Projects -->
-<a href="https://github.com/tusharpandey436/YOUR-REPO-1">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-1&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+<a href="https://github.com/tusharpandey436/life-admin-agent">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=life-admin-agent&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
 </a>
-<a href="https://github.com/tusharpandey436/YOUR-REPO-2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+<a href="https://github.com/tusharpandey436/SceneForge">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=SceneForge&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
 </a>
 
 <!-- ROW 2 — Backend / API Projects -->
-<a href="https://github.com/tusharpandey436/YOUR-REPO-3">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-3&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+<a href="https://github.com/tusharpandey436/intelligent-data-ui">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=intelligent-data-ui&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
 </a>
-<a href="https://github.com/tusharpandey436/YOUR-REPO-4">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-4&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+<a href="https://github.com/tusharpandey436/Ai_Data_Fetcher">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Ai_Data_Fetcher&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
 </a>
 
 <!-- ROW 3 — Tools / Utilities -->
-<a href="https://github.com/tusharpandey436/YOUR-REPO-5">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-5&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+<a href="https://github.com/tusharpandey436/PhishingApp2">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=PhishingApp2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
 </a>
-<a href="https://github.com/tusharpandey436/YOUR-REPO-6">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-6&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+<a href="https://github.com/tusharpandey436/Animated_video_maker">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Animated_video_maker&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+</a>
+
+<!-- ROW 4 — Apps -->
+<a href="https://github.com/tusharpandey436/Spreado_App">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Spreado_App&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+</a>
+<a href="https://github.com/tusharpandey436/life-admin-agent">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=life-admin-agent&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
 </a>
 
 </div>
@@ -276,17 +284,18 @@ class ProductionRAGPipeline:
 
 ```
 🤖 AI / RAG Systems
-   ├── AI Teams Bot ────────── Production RAG · Gemini · Supabase · Hybrid Retrieval
-   ├── YOUR-REPO-1 ─────────── [short description]
-   └── YOUR-REPO-2 ─────────── [short description]
+   ├── Agentic_RAG ──────────── Production RAG system · Hybrid Retrieval · Gemini · Supabase
+   ├── life-admin-agent ─────── Agentic AI assistant to manage daily life tasks autonomously
+   └── SceneForge ───────────── AI-powered scene generation pipeline · Python · LLM-driven
 
-⚙️ Backend / APIs
-   ├── YOUR-REPO-3 ─────────── [short description]
-   └── YOUR-REPO-4 ─────────── [short description]
+📊 Data & Full-Stack Apps
+   ├── intelligent-data-ui ──── Smart data dashboard with AI-driven insights · TypeScript
+   ├── Ai_Data_Fetcher ─────── Automated AI data fetching & aggregation layer · TypeScript
+   └── Spreado_App ──────────── Spreadsheet-style data management app · TypeScript
 
-🛠️ Tools / Utilities
-   ├── YOUR-REPO-5 ─────────── [short description]
-   └── YOUR-REPO-6 ─────────── [short description]
+🛡️ Security & Creative Tools
+   ├── PhishingApp2 ─────────── Phishing detection & awareness tool · TypeScript
+   └── Animated_video_maker ─── Automated animated video creation pipeline · Python
 ```
 
 ---
@@ -483,7 +492,7 @@ class ProductionRAGPipeline:
   <img src="https://img.shields.io/badge/Gmail-Drop_a_Mail-ea4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a1a" />
 </a>
 &nbsp;
-<a href="https://your-portfolio.dev">
+<a href=https://tushar-portfolio-tan-ten.vercel.app/">
   <img src="https://img.shields.io/badge/Portfolio-Live_Site-00f7ff?style=for-the-badge&logo=vercel&logoColor=black&labelColor=0a0a1a" />
 </a>
 &nbsp;
