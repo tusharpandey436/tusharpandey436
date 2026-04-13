@@ -244,37 +244,17 @@ class ProductionRAGPipeline:
 
 <div align="center">
 
-<!-- ROW 1 — AI / RAG Projects -->
-<a href="https://github.com/tusharpandey436/life-admin-agent">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=life-admin-agent&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
-</a>
-<a href="https://github.com/tusharpandey436/SceneForge">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=SceneForge&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
-</a>
+[![life-admin-agent](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=life-admin-agent&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12)](https://github.com/tusharpandey436/life-admin-agent)
+[![SceneForge](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=SceneForge&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12)](https://github.com/tusharpandey436/SceneForge)
 
-<!-- ROW 2 — Backend / API Projects -->
-<a href="https://github.com/tusharpandey436/intelligent-data-ui">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=intelligent-data-ui&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
-</a>
-<a href="https://github.com/tusharpandey436/Ai_Data_Fetcher">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Ai_Data_Fetcher&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
-</a>
+[![intelligent-data-ui](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=intelligent-data-ui&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12)](https://github.com/tusharpandey436/intelligent-data-ui)
+[![Ai_Data_Fetcher](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Ai_Data_Fetcher&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12)](https://github.com/tusharpandey436/Ai_Data_Fetcher)
 
-<!-- ROW 3 — Tools / Utilities -->
-<a href="https://github.com/tusharpandey436/PhishingApp2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=PhishingApp2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
-</a>
-<a href="https://github.com/tusharpandey436/Animated_video_maker">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Animated_video_maker&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
-</a>
+[![PhishingApp2](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=PhishingApp2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12)](https://github.com/tusharpandey436/PhishingApp2)
+[![Animated_video_maker](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Animated_video_maker&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12)](https://github.com/tusharpandey436/Animated_video_maker)
 
-<!-- ROW 4 — Apps -->
-<a href="https://github.com/tusharpandey436/Spreado_App">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Spreado_App&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
-</a>
-<a href="https://github.com/tusharpandey436/life-admin-agent">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=life-admin-agent&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
-</a>
+[![Spreado_App](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Spreado_App&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12)](https://github.com/tusharpandey436/Spreado_App)
+[![Agentic_RAG](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=Agentic_RAG&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12)](https://github.com/tusharpandey436/Agentic_RAG)
 
 </div>
 
@@ -393,11 +373,13 @@ class ProductionRAGPipeline:
 
 ## 🐍 Commit Serpentine
 
+> ⚙️ Powered by GitHub Actions — runs daily. Setup: add `.github/workflows/snake.yml` to your profile repo and run the workflow once manually.
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tusharpandey436/tusharpandey436/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tusharpandey436/tusharpandey436/output/github-contribution-grid-snake.svg" />
-    <img alt="contribution snake" src="https://raw.githubusercontent.com/tusharpandey436/tusharpandey436/output/github-contribution-grid-snake.svg" width="100%" />
+    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/tusharpandey436/tusharpandey436/output/github-contribution-grid-snake.svg" width="100%" />
   </picture>
 </div>
 
@@ -492,7 +474,7 @@ class ProductionRAGPipeline:
   <img src="https://img.shields.io/badge/Gmail-Drop_a_Mail-ea4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a1a" />
 </a>
 &nbsp;
-<a href=https://tushar-portfolio-tan-ten.vercel.app/">
+<a href="https://your-portfolio.dev">
   <img src="https://img.shields.io/badge/Portfolio-Live_Site-00f7ff?style=for-the-badge&logo=vercel&logoColor=black&labelColor=0a0a1a" />
 </a>
 &nbsp;
