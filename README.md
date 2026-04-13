@@ -61,13 +61,25 @@ const TUSHAR_PANDEY = {
 
 ---
 
-## <img src="https://user-images.githubusercontent.com/74038190/216649417-9acc58df-9186-4132-ad8a-70ba28b0b585.png" width="34" /> Signature Project — AI Teams Bot
+## <img src="https://user-images.githubusercontent.com/74038190/216649417-9acc58df-9186-4132-ad8a-70ba28b0b585.png" width="34" /> Project Showcase
+
+> Click any card to open the repo. Stars and forks update live from GitHub.
+
+---
+
+### 🏆 Flagship Project
+
+<div align="center">
+
+[![AI Teams Bot](https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-RAG-REPO&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12&description_lines_count=3)](https://github.com/tusharpandey436/YOUR-RAG-REPO)
+
+</div>
 
 <div align="center">
 <img src="https://img.shields.io/badge/TYPE-Production_RAG_System-8b5cf6?style=for-the-badge&labelColor=0a0a1a" />
 <img src="https://img.shields.io/badge/STATUS-Deployed_&_Active-00ff88?style=for-the-badge&labelColor=0a0a1a" />
-<img src="https://img.shields.io/badge/SCALE-Enterprise_Grade-ff6b6b?style=for-the-badge&labelColor=0a0a1a" />
 <img src="https://img.shields.io/badge/LLM-Gemini_1.5_Pro-f59e0b?style=for-the-badge&labelColor=0a0a1a&logo=google" />
+<img src="https://img.shields.io/badge/SCALE-Enterprise_Grade-ff6b6b?style=for-the-badge&labelColor=0a0a1a" />
 </div>
 
 <br/>
@@ -75,8 +87,6 @@ const TUSHAR_PANDEY = {
 > 💡 **Problem**: Enterprise teams drowning in documents — policies, manuals, SOPs, reports. Nobody reads them. Nobody finds answers fast enough.
 >
 > **Solution**: A Teams-integrated AI bot that answers questions instantly, with source citations, across all document formats.
-
-<br/>
 
 ### 🗺️ System Architecture
 
@@ -126,14 +136,12 @@ flowchart LR
 
     U --> TB --> FG --> AUTH
     D --> PARSE --> CHUNK --> META --> EMB --> VDB
-
     AUTH --> BM & SEM
     VDB --> SEM
     BM & SEM --> HYB --> RANK
     RANK --> CTX --> LLM --> EVAL
     LLM --> RES
     EVAL --> LOG
-
     CACHE -.-> FG
     META_DB -.-> META
 
@@ -152,8 +160,6 @@ flowchart LR
     class FG,HYB,CTX neutral
 ```
 
-<br/>
-
 ### 🧬 Core Pipeline — Production Code
 
 <details>
@@ -162,7 +168,6 @@ flowchart LR
 ```python
 # rag_engine/pipeline.py
 from dataclasses import dataclass
-from typing import AsyncIterator
 import asyncio, time
 
 @dataclass
@@ -174,53 +179,27 @@ class RAGResponse:
     eval_scores : dict[str, float]
 
 class ProductionRAGPipeline:
-    """
-    End-to-end RAG pipeline with hybrid retrieval,
-    cross-encoder reranking, and built-in evaluation.
-    """
-
     def __init__(self, config: PipelineConfig):
-        self.retriever   = HybridRetriever(config)   # BM25 + Semantic
-        self.reranker    = CrossEncoderReranker()     # ms-marco-MiniLM
-        self.generator   = GeminiGenerator(config)   # Gemini 1.5 Pro
-        self.evaluator   = RAGASEvaluator()          # Faithfulness + Relevance
-        self.cache       = RedisSemanticCache()       # Dedup near-identical queries
+        self.retriever   = HybridRetriever(config)
+        self.reranker    = CrossEncoderReranker()
+        self.generator   = GeminiGenerator(config)
+        self.evaluator   = RAGASEvaluator()
+        self.cache       = RedisSemanticCache()
 
     async def run(self, query: str) -> RAGResponse:
-        start = time.perf_counter()
-
-        # Step 1: Query intelligence
-        expanded = await self._expand_query(query)          # HyDE + multi-query
-
-        # Step 2: Check semantic cache
+        start    = time.perf_counter()
+        expanded = await self._expand_query(query)
         if cached := await self.cache.get(expanded):
             return cached
-
-        # Step 3: Hybrid retrieval (parallel)
         bm25_results, sem_results = await asyncio.gather(
             self.retriever.bm25_search(expanded, top_k=30),
             self.retriever.semantic_search(expanded, top_k=30),
         )
-
-        # Step 4: Reciprocal Rank Fusion
-        fused = reciprocal_rank_fusion(bm25_results, sem_results)
-
-        # Step 5: Cross-encoder reranking
+        fused    = reciprocal_rank_fusion(bm25_results, sem_results)
         reranked = await self.reranker.score(fused[:20], query)
-
-        # Step 6: Context assembly with token budget
-        context = self._build_context(reranked[:5], max_tokens=3000)
-
-        # Step 7: Generate answer
-        answer = await self.generator.complete(
-            system  = SYSTEM_PROMPT,
-            context = context,
-            query   = query,
-        )
-
-        # Step 8: Evaluate faithfulness
-        scores = await self.evaluator.score(query, context, answer)
-
+        context  = self._build_context(reranked[:5], max_tokens=3000)
+        answer   = await self.generator.complete(SYSTEM_PROMPT, context, query)
+        scores   = await self.evaluator.score(query, context, answer)
         response = RAGResponse(
             answer      = answer,
             sources     = reranked[:5],
@@ -228,28 +207,13 @@ class ProductionRAGPipeline:
             latency_ms  = int((time.perf_counter() - start) * 1000),
             eval_scores = scores,
         )
-
         await self.cache.set(expanded, response)
         return response
-
-    async def _expand_query(self, query: str) -> ExpandedQuery:
-        """HyDE: Generate hypothetical document, then embed it."""
-        hypothetical_doc = await self.generator.complete(
-            system = "Generate a document that would answer this query.",
-            query  = query,
-        )
-        return ExpandedQuery(
-            original     = query,
-            hypothetical = hypothetical_doc,
-            sub_queries  = await self._decompose(query),
-        )
 ```
 
 </details>
 
-<br/>
-
-### 📊 Performance Metrics (Production)
+### 📊 Production Metrics
 
 | Metric | Target | Achieved | Status |
 |--------|--------|----------|--------|
@@ -257,13 +221,11 @@ class ProductionRAGPipeline:
 | **Context Relevance** | > 80% | **87.2%** | 🟢 Exceeds |
 | **P95 Latency** | < 3s | **1.8s** | 🟢 Exceeds |
 | **Multi-format Support** | 5 types | **7 types** | 🟢 Exceeds |
-| **Query Cache Hit Rate** | > 30% | **43%** | 🟢 Exceeds |
+| **Cache Hit Rate** | > 30% | **43%** | 🟢 Exceeds |
 | **Concurrent Users** | 50 | **200+** | 🟢 Exceeds |
 
-<br/>
-
 <div align="center">
-  <a href="https://github.com/tusharpandey436/YOUR-REPO">
+  <a href="https://github.com/tusharpandey436/YOUR-RAG-REPO">
     <img src="https://img.shields.io/badge/📁_SOURCE_CODE-View_on_GitHub-161b22?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   &nbsp;
@@ -275,6 +237,57 @@ class ProductionRAGPipeline:
     <img src="https://img.shields.io/badge/📚_DOCS-Read_Architecture-00f7ff?style=for-the-badge&logo=readthedocs&logoColor=black" />
   </a>
 </div>
+
+---
+
+### 🗂️ All Projects — Live Repo Cards
+
+<div align="center">
+
+<!-- ROW 1 — AI / RAG Projects -->
+<a href="https://github.com/tusharpandey436/YOUR-REPO-1">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-1&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+</a>
+<a href="https://github.com/tusharpandey436/YOUR-REPO-2">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+</a>
+
+<!-- ROW 2 — Backend / API Projects -->
+<a href="https://github.com/tusharpandey436/YOUR-REPO-3">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-3&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+</a>
+<a href="https://github.com/tusharpandey436/YOUR-REPO-4">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-4&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+</a>
+
+<!-- ROW 3 — Tools / Utilities -->
+<a href="https://github.com/tusharpandey436/YOUR-REPO-5">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-5&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+</a>
+<a href="https://github.com/tusharpandey436/YOUR-REPO-6">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tusharpandey436&repo=YOUR-REPO-6&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f7ff&icon_color=00f7ff&text_color=c9d1d9&border_radius=12" />
+</a>
+
+</div>
+
+---
+
+### 📌 Project Categories at a Glance
+
+```
+🤖 AI / RAG Systems
+   ├── AI Teams Bot ────────── Production RAG · Gemini · Supabase · Hybrid Retrieval
+   ├── YOUR-REPO-1 ─────────── [short description]
+   └── YOUR-REPO-2 ─────────── [short description]
+
+⚙️ Backend / APIs
+   ├── YOUR-REPO-3 ─────────── [short description]
+   └── YOUR-REPO-4 ─────────── [short description]
+
+🛠️ Tools / Utilities
+   ├── YOUR-REPO-5 ─────────── [short description]
+   └── YOUR-REPO-6 ─────────── [short description]
+```
 
 ---
 
