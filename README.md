@@ -80,7 +80,7 @@ LLM --> RES[Answer + Sources]
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-username/your-username/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/tusharpandey436/tusharpandey436/output/github-contribution-grid-snake.svg" />
 </p>
 
 ---
@@ -97,8 +97,8 @@ LLM --> RES[Answer + Sources]
 ## 🌐 Connect
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" /> :) </a>
+  <a href="#"><img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail" /> Tusharpandey436@gmail.com</a>
 </p>
 
 ---
@@ -106,7 +106,7 @@ LLM --> RES[Answer + Sources]
 ## 👁️ Visitors
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=your-username&color=0e75b6&style=for-the-badge" />
+  <img src="https://komarev.com/ghpvc/?username=tusharpandey436&color=0e75b6&style=for-the-badge" />
 </p>
 
 ---
